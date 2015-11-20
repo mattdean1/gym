@@ -25,5 +25,5 @@ our database is updated (and the customer receives an email) by calling ipn2.php
 The customer is redirected from PayPal back to our site, so we can show them a comforting conformation message, and link them to our portal, where they can view their current memberships:
 
 ![PayPal redirect](screenshots/paypal2.png)
-![Portal](screenshots/portal1.png)
+![Portal](screenshots/portal.png)
 ![Portal2](screenshots/portal2.png)
