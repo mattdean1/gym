@@ -6,7 +6,6 @@ The next step on the coding ladder, I improved my PHP and MySQL skills, and got 
 I also finally got to implement a working payment system!
 
 ####The Project
-I created a membership booking and payment system for my local gym in PHP, using a MySQL Database.
 
 Customers are asked what duration/type of membership they would like:
 
