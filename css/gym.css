@@ -1,0 +1,287 @@
+html,body,p,div,img,h1,h2,h3,h4,li,ul,ol,dl,dd,dt,form,table,td,tr,input { /*set standard formatting for common elements*/
+  margin:0;	/*space outside the element*/
+  padding:0; /*space inside the element*/
+  border:0; /*coloured space around the element*/
+  border-collapse:separate; /*sets adjacent borders to not merge*/
+  border-spacing:0; /*sets distance between borders of adjacent cells(when border-collapse:seperate only)*/
+}
+html,body {zheight:100%}
+body {
+  font-family: Verdana, Geneva, sans-serif; /*select font - try verdana first, if it is does not work/is not compatible then try geneva, otherwise try any compatible sans-serif font*/
+  font-size:100.1%; /*** This is the master setting - for compatibility make all other font-sizes in % ***/
+  color:#000000; /*font colour = black*/
+  background:#FFFFFF; /*Background colour of page*/
+  min-width:770px; /*Content Width*/
+  text-align:center; /*align text to centre of container*/
+}
+strong,b {
+  font-weight:bold; /*set bold font formatting*/
+}
+p { /*formatting for paragraph element*/
+  font-size:90%;
+  line-height:1.1em;
+}
+h2 {
+	font-weight:normal;
+	}
+button {
+	padding:5px;
+	margin:5px;
+	font-size:200%;
+	
+}
+#fullheightcontainer { /* #date = id of date */
+	/*auto margins center the element inside its container*/
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  position:relative;
+  width:770px; /*** Content Width ***/
+  display:table;
+  zheight:100%;
+  margin-bottom:-50px; /*** NEGATIVE TOTAL Height of Footer Rows ***/
+  
+}
+#wrapper {
+  zdisplay:table-cell;
+  position:relative;
+  zheight:100%;
+}
+
+#clearheadercenter {
+  height:82px; /*** TOTAL Height of Header Rows ***/
+  overflow:hidden;
+}
+#clearfootercenter {
+  height:50px; /*** TOTAL Height of Footer Rows ***/
+  overflow:hidden;
+}
+#footer {
+  z-index:1; /*'float' the element - layered vertically*/
+  position:relative;
+  width:100%;
+  height:0px;
+}
+#footer-inner {
+  width:770px; /*** Content Width ***/
+  margin-left:auto;
+  margin-right:auto;
+  height:0px;
+}
+#subfooter1 {
+  margin:0px 0px; 
+  padding:2px 0px; /*top and bottom margins 2px, left and right margins 0px*/
+  background:#B0C4DE;
+  text-align:center;
+  height:8px;
+  overflow:hidden; /*content which doesn't fit inside the element will be hidden*/
+}
+#header {
+  z-index:1;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:0px;
+}
+#header-inner {
+  width:770px; /*** Content Width ***/
+  margin-left:auto;
+  margin-right:auto;
+  height:0px;
+  position:relative;
+}
+#subheader1 {
+  margin:0px 0px;
+  padding:0px
+  background:#FFFFCC;
+  text-align:center;
+  height:25px;
+  overflow:hidden;
+}
+#subheader2 {
+  margin:2px 0px;
+  background:#B0C4DE;
+  text-align:center;
+  height:75px;
+  overflow:hidden;
+}
+#container-center {text-align:center;}
+#centerfill {display:none}
+
+/*** td elements ***/
+.default { /* .default = class name default*/
+	width:25px;
+	border:2px solid black;
+	height:25px;
+	text-align:center;
+	padding:0px;
+}
+.info {
+	width:25px;
+	border:1.5px solid black;
+	height:25px;
+	text-align:center;
+	padding:0px;
+}
+.orderinfo {
+	border:1.5px solid black;
+	text-align:center;
+	padding:5px;
+}
+.button {
+	width:25px;
+	border:0px;
+	height:25px;
+	text-align:center;
+	padding:0px;
+}
+.button:hover { /* :hover is an active tag, meaning the element will change its class to this one on mouseover */
+	cursor:pointer; /*change how the cursor looks - pointer means the little hand (used on clickable element)*/
+}
+.imaginaryseat {
+	width:25px;
+	height:25px;
+	border:0px;
+	padding:0px;
+	text-align:center;
+}
+.realseat {
+	width:25px;
+	border:1px solid black;
+	height:25px;
+	text-align:center;
+	vertical-align:middle;
+	padding:0px;
+}
+.seatspacer {
+	width:25px;
+	border:0px
+	height:25px;
+	text-align:center;
+	padding:0px;
+}
+.disabledseat {
+	width:25px;
+	border:1px solid black;
+	height:25px;
+	text-align:center;
+	vertical-align:middle;
+	padding:0px;
+	background-color:#B6ECFF;
+}
+.unavailableseat {
+	width:25px;
+	border:1px solid black;
+	height:25px;
+	text-align:center;
+	vertical-align:middle;
+	padding:0px;
+	background-color:#CCCCCC;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:75%;
+}
+#date {
+	border:0px;
+}
+/*** table elements ***/
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+    margin-bottom:20px;
+    border-collapse:collapse; /*set adjacent borders to merge*/
+    position:relative;
+}
+#stage {
+	margin-bottom:10px;
+	width:850px;
+	position:relative;
+}
+#priceinfo {
+	width:300px;
+}
+#disabledinfo {
+	margin-top:50px;
+	margin-bottom:30px;
+	width:300px;
+	background-color:#B6ECFF;
+}
+#seatselectinfo {
+	margin-top:50px;
+	margin-bottom:30px;
+	width:300px;
+	background-color:lightgreen;
+}
+#seatunavailableinfo {
+	margin-top:50px;
+	margin-bottom:30px;
+	width:300px;
+	background-color:#CCCCCC;
+}
+#buttons {
+	margin-top:20px;
+}
+/*** input ***/
+input.shows { /*input.shows = input element with class of shows*/
+	font-family: Verdana, Geneva, sans-serif;
+	padding:60px;
+	background-color:#FFFFFF;
+	font-size:100%;
+}
+input.shows:hover, input.shows:focus { /* :hover and :focus achieve the same thing - change class on mouseover - focus is used when selecting elements via keyboard*/
+	background-color:#CCCCCC;
+	cursor:pointer;
+}
+input[type="checkbox"] { /*type tag specifies a certain type of input to format*/
+    display:none; /*hides the element completely*/
+}
+input.details {
+	border:1px solid black;
+	display:inline-block;
+	width:150px;
+}
+/*** formatting etc. ***/
+.smalltext {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:50%;
+}
+.seattext {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:75%;
+	position:relative;
+	top:-8px; /*moves the element up 8px*/
+	right:10px;
+}
+label {
+	display:block;
+	width:1px;
+	height:1px;
+	padding:20px;
+}
+label:hover {
+	cursor:pointer;
+}
+.seatdisplay {
+	position:relative;
+	text-align:center;
+	vertical-align:middle;
+	z-index:2;
+}
+div.styleform {
+	display:inline-block; /*element is displayed as inline but behaves as block*/
+}
+div.styleformouter {
+	width:100%;
+	text-align:center;
+}
+label.custlabel {
+	display:block;
+	float:left;
+	width:140px;  
+	text-align:left;
+	height:100%;
+	padding:0px;
+}
+.confirm {
+	padding:5px;
+	}
